@@ -465,18 +465,18 @@ while (status.dia < dias) {
     if (status.horas == 9 && status.minutos == 0) {
         console.log('Você chega no trabalho e já dá de cara com seu chefe!');
         console.log(
-            `Muito bem, ${status.nome}. Você chegou no horário certinho!`,
+            `Muito bem, ${personagem.nome}. Você chegou no horário certinho!`,
         );
     } else if (status.horas >= 9 && status.minutos >= 0) {
         console.log('Você chega no trabalho e já dá de cara com seu chefe!');
         console.log(
-            `${status.nome}, você esta atrasado e sabe que vai ser descontado do seu salário no final do dia né?`,
+            `${personagem.nome}, você esta atrasado e sabe que vai ser descontado do seu salário no final do dia né?`,
         );
         horaExtra--;
     } else {
         console.log('Você chega no trabalho e já dá de cara com seu chefe!');
         console.log(
-            `Muito bem, ${status.nome}. Você esta adiantado. Irei te pagar um extra no final do dia!`,
+            `Muito bem, ${personagem.nome}. Você esta adiantado. Irei te pagar um extra no final do dia!`,
         );
         horaExtra++;
     }
